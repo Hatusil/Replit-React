@@ -1,0 +1,68 @@
+.team-cards {
+  background-color: #222;
+  color: #fff;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  container-name: team-cards;
+  container-type: inline-size;
+}
+
+.teams-cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1300px;
+  margin: auto;
+  width: 90%;
+  gap: 12px;
+  padding: 20px;
+  min-height: 80vh;
+}
+
+.random-card {
+background-image:linear-gradient(#0009, #0009), url("");
+background-position: center;
+background-size: cover;
+display: grid;
+place-content: center;
+border-radius: 12px;
+margin: 12px;
+}
+
+.random-card:hover {
+  opacity: 0.74;
+  outline: 2px solid #fff7;
+}
+
+/* Media Queries para Responsividad */
+@media (min-width: 56.25em) {
+  .teams-cards-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .random-card:first-child{
+      grid-column: span 1;
+  }
+
+  .random-card:nth-child(6){
+      grid-column: span 1;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .teams-cards-container{
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  .random-card:first-child{
+      grid-column: span 2;
+      grid-row: span 2;
+  }
+
+  .random-card:nth-child(6){
+      grid-column: span 4;
+  }
+}
