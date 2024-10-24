@@ -29,7 +29,6 @@ background-size: cover;
 display: grid;
 place-content: center;
 border-radius: 12px;
-margin: 12px;
 }
 
 .random-card:hover {
@@ -38,7 +37,8 @@ margin: 12px;
 }
 
 /* Media Queries para Responsividad */
-@media (min-width: 56.25em) {
+/* 900px - 56.25% - em - etc */
+@media (min-width: 56.25rem) {
   .teams-cards-container {
       grid-template-columns: repeat(2, 1fr);
   }
@@ -51,8 +51,8 @@ margin: 12px;
       grid-column: span 1;
   }
 }
-
-@media (min-width: 81.25em) {
+/* 1300px - 81.25% - em - etc */
+@media (min-width: 81.25rem) {
   .teams-cards-container{
       grid-template-columns: repeat(3, 1fr);
   }
