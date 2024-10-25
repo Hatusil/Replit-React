@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './TeamCards.css';
-import CardCharly from './CardCharly';
 import Popup from './Popup';
+import CardCharly from './CardCharly';
+import CardHatusil from './CardHatusil';
 
 const TeamCards = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -24,7 +25,7 @@ const TeamCards = () => {
         src="./public/img/logo.png"
         alt="Team Logo"
       />
-      <h1 className="team-title">Bienvenidos a HiFiveDevelopers</h1>
+      <h1 className="team-title">Bienvenidos a HiFive Developers</h1>
       <p className="team-intro">
         Conoce a nuestro talentoso equipo de desarrolladores. Aquí podrás ver 
         las tarjetas personales de cada integrante, donde comparten un poco sobre 
@@ -35,7 +36,7 @@ const TeamCards = () => {
         <div className='random-card' onClick={() => handleCardClick(<CardCharly />)}>
           <h2 className="card-name">Card 1</h2>
         </div>
-        <div className='random-card' onClick={() => handleCardClick(<CardCharly />)}>
+        <div className='random-card' onClick={() => handleCardClick(<CardHatusil githubUsername="Hatusil" linkedin="https://www.linkedin.com/in/ricardo-gieco-520565143/" />)}>
           <h2 className="card-name">Card 2</h2>
         </div>
         <div className='random-card' onClick={() => handleCardClick(<CardCharly />)}>
@@ -46,9 +47,6 @@ const TeamCards = () => {
         </div>
         <div className='random-card' onClick={() => handleCardClick(<CardCharly />)}>
           <h2 className="card-name">Card 5</h2>
-        </div>
-        <div className='random-card' onClick={() => handleCardClick(<CardCharly />)}>
-          <h2 className="card-name">Card 6</h2>
         </div>
       </div>
 
