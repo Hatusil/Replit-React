@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './CardHatusil.css';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
-const CardHatusil = ({ githubUsername, linkedin }) => {
+const CardHatusil = ({ githubUsername, linkedin, description2 }) => {
   const [githubData, setGithubData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -50,7 +50,7 @@ const CardHatusil = ({ githubUsername, linkedin }) => {
       <h2 id="card-title">{githubData.name || githubUsername}</h2>
       <h3>{githubData.company || "Empresa no disponible"}</h3>
       <p>{githubData.bio || "Descripción no disponible"}</p>
-      <p className="italic-text">En proceso de dominar el arte de no nombrar variables con nombres ridículos.</p>
+      <p className="italic-text">{ description2 }</p>
 
       <button 
         className="show-more-button-hatusil" 

@@ -36,7 +36,7 @@ const TeamCards = () => {
         <div className='random-card' onClick={() => handleCardClick(<CardCharly />)}>
           <h2 className="card-name">Card 1</h2>
         </div>
-        <div className='random-card' onClick={() => handleCardClick(<CardHatusil githubUsername="Hatusil" linkedin="https://www.linkedin.com/in/ricardo-gieco-520565143/" />)}>
+        <div className='random-card' onClick={() => handleCardClick(<CardHatusil githubUsername="Hatusil" linkedin="https://www.linkedin.com/in/ricardo-gieco-520565143/" description2="En proceso de dominar el arte de no nombrar variables con nombres ridículos." />)}>
           <h2 className="card-name">Card 2</h2>
         </div>
         <div className='random-card' onClick={() => handleCardClick(<CardCharly />)}>
