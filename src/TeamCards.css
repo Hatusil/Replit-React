@@ -22,7 +22,7 @@
 }
 
 .random-card {
-  background-image: linear-gradient(#0009, #0009), url("https://github.com/Hatusil/Ewoc-Logic/blob/main/img/ewok.jpg?raw=true");
+  background-image: linear-gradient(#0009, #0009), url("./public/img/logo.png");
   background-size: cover;
   background-position: center;
   border-radius: 12px;
